@@ -316,7 +316,9 @@ innodb_autoinc_lock_mode = 1
 # Dynamic 설정을 할수 있다. SET GLOBAL innodb_change_buffering = inserts
 innodb_change_buffering = inserts
 
-# 이 값은 설명하기 어렵다. 뭐가 뭔지...
+#이 매개 변수를 설정하면 Old LRU 목록에 포함 된 페이지에 
+# 다시 액세스가 발생해도 지정된 시간이 경과 할 때까지 Young LRU 목록으로 이동되지 않도록합니다.
+# innodb_old_blocks_time은 밀리 초 단위로 지정합니다 기본값은 0 (비활성화)가 있습니다.
 innodb_old_blocks_time = 500
 
 ##--------------------------------------------------------------------
